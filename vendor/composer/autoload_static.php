@@ -24,6 +24,7 @@ class ComposerStaticInit2bbdbe489ca12cee143738a3cd35bab5
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+            'Services\\' => 9,
         ),
         'P' => 
         array (
@@ -88,6 +89,10 @@ class ComposerStaticInit2bbdbe489ca12cee143738a3cd35bab5
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Services\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Services',
         ),
         'Psr\\Log\\' => 
         array (
@@ -186,6 +191,7 @@ class ComposerStaticInit2bbdbe489ca12cee143738a3cd35bab5
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'Core\\Commands' => __DIR__ . '/../..' . '/Core/Commands.php',
+        'Core\\Helpers' => __DIR__ . '/../..' . '/Core/Helper.php',
         'Doctrine\\Common\\Inflector\\Inflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
@@ -1032,6 +1038,7 @@ class ComposerStaticInit2bbdbe489ca12cee143738a3cd35bab5
         'Psr\\Log\\NullLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/NullLogger.php',
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
+        'Services\\Run' => __DIR__ . '/../..' . '/Services/Run.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Command\\Command' => __DIR__ . '/..' . '/symfony/console/Command/Command.php',
         'Symfony\\Component\\Console\\Command\\HelpCommand' => __DIR__ . '/..' . '/symfony/console/Command/HelpCommand.php',

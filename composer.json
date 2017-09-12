@@ -12,6 +12,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Services\\": "Services/",
             "Core\\": "Core/",
             "Models\\": "Models/"
         }

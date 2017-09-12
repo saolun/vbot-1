@@ -1,14 +1,18 @@
 <?php
-require_once __DIR__.'/vendor/autoload.php';
-
-date_default_timezone_set("PRC");
+namespace Services;
+/**
+ * Created by PhpStorm.
+ * User: alonex
+ * Date: 17/9/12
+ * Time: 14:40
+ */
 use Hanson\Vbot\Foundation\Vbot;
 use Illuminate\Support\Collection;
 use Hanson\Vbot\Message\Text;
 use Models\ContactsModel;
 
 class Run{
-    private $vbot;
+    public  $vbot;
     private $observer;
     private $messageHandler;
     public  $ContactsModel;
@@ -121,32 +125,3 @@ class Run{
         ];
     }
 }
-
-function checkOption($argv){
-    if(is_array($argv)){
-        $CommandOptions = [];
-        foreach($argv as $val){
-            $rule ='/\-\-\w+/';
-            if(preg_match($rule,$val,$result)){
-                array_push($CommandOptions,[$result[0]=>explode('=',$val)[1]]);
-            }
-        }
-        if(count($CommandOptions) >0){
-            return $CommandOptions;
-        }else{
-            return false;
-        }
-    }
-    return false;
-}
-
-if(checkOption($argv)){
-    print_r(checkOption($argv));
-    exit;
-}else{
-    echo '没有可执行参数';
-    die(0);
-}
-$run  = new Run();
-$run->MsgReturn();
-$run->start();
