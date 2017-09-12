@@ -1,5 +1,5 @@
 <?php
-
+namespace Core;
 /**
  * Class Commands
  * author:ALonexy<961610358@qq.com>
