@@ -1,10 +1,10 @@
 # VbotDemo
 Vbot demo
 
-#Commands
-##--func 不区分大小写  必须是Services Run.php 的pubilc的Fun
+# Commands
+## --func 不区分大小写  必须是Services Run.php 的pubilc的Fun
 ```
-php server --session=vbot-test3 --func=msgreturn
+> 1.php server --session=vbot-test3 --func=msgreturn
 
-php server --session=vbot-test3 --func=TimeTask
+> 2.php server --session=vbot-test3 --func=TimeTask
 ```
