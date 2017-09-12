@@ -43,7 +43,8 @@ class Commands{
                 }
             }
         }else{
-            die('--没有可执行参数');
+            $this->run->vbot->console->log('执行 php server --help 查看帮助信息');
+            die(0);
         }
     }
     //判断启动方法是否在类中
@@ -61,6 +62,14 @@ class Commands{
         }
         return [$RetStatus,$RetFunName];
     }
+    //获取 所有可执行Public Function
+    private function getAllClassMethods(){
+        $HelpFun = new Helpers();
+        $methods = $HelpFun->get_class_all_methods($this->run);
+        array_walk($methods,function(&$v,$k){$v = strtolower($v);});
+        return $methods;
+    }
+    //匹配 --
     private function checkOption($argv){
         if(is_array($argv)){
             $CommandOptions = [];
@@ -71,6 +80,20 @@ class Commands{
                     if($cs && isset($result[0])){
                         array_push($CommandOptions,[$result[0]=>$cs]);
                     }
+                }
+                $rule_help = '/\-\-help/';
+                if(preg_match($rule_help,$val,$result_help)){
+                    $allFuncs = $this->getAllClassMethods();
+                    $consolMsg = '';
+
+                    foreach($allFuncs as $allFv){
+                        if($allFv == '__construct'){
+                        }else{
+                            $consolMsg.="\n可执行Funs=>".$allFv."\n";
+                        }
+                    }
+                    $this->run->vbot->console->log($consolMsg);
+                    die(0);
                 }
             }
             if(count($CommandOptions) >0){
