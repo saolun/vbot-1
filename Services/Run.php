@@ -16,6 +16,11 @@ class Run{
     private $observer;
     private $messageHandler;
     public  $ContactsModel;
+
+    /**
+     * @name 实例
+     * @desc 构造方法
+     */
     public function __construct()
     {
         $this->vbot = new Vbot($this->getConfigs());
@@ -26,6 +31,11 @@ class Run{
         // 联系人model
         $this->ContactsModel = new ContactsModel();
     }
+
+    /**
+     * @name 启动
+     * @desc 简单的启动 不添加其他操作
+     */
     public function start()
     {
         $this->vbot->console->log('---脚本启动中---');
@@ -35,6 +45,12 @@ class Run{
         });
         $this->vbot->server->serve();
     }
+
+    /**
+     * @name 收到信息后触发
+     * @desc 收到信息后总定义回复
+     * @throws \Hanson\Vbot\Exceptions\ArgumentException
+     */
     public function MsgReturn()
     {
         // 收到消息时触发
@@ -43,6 +59,12 @@ class Run{
             Text::send($message['from']['UserName'], 'Hi! 现在时间：'.date('Y-m-d H:i:s',time()));
         });
     }
+
+    /**
+     * @name 定时任务
+     * @desc 任务维持方法
+     * @throws \Hanson\Vbot\Exceptions\ArgumentException
+     */
     public function TimeTask(){
         // 一直触发
         $this->messageHandler->setCustomHandler(function(){
@@ -53,7 +75,12 @@ class Run{
             sleep(60*30);
         });
     }
-    //获取配置文件
+
+    /**
+     * @name 获取配置文件
+     * @desc 配置项
+     * @return array
+     */
     protected function getConfigs()
     {
         $path = __DIR__.'/tmp/';

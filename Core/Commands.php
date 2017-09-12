@@ -69,6 +69,26 @@ class Commands{
         array_walk($methods,function(&$v,$k){$v = strtolower($v);});
         return $methods;
     }
+    private function colorize($text, $status='SUC') {
+        $out = "";
+        switch($status) {
+            case "SUC":
+                $out = "[32m"; //Green
+                break;
+            case "FAIL":
+                $out = "[31m"; //Red
+                break;
+            case "WARN":
+                $out = "[33m"; //Yellow
+                break;
+            case "NOTE":
+                $out = "[34m"; //Blue
+                break;
+            default:
+                throw new Exception("Invalid status: " . $status);
+        }
+        return chr(27) . "$out" . "$text" . chr(27) . "[0m";
+    }
     //匹配 --
     private function checkOption($argv){
         if(is_array($argv)){
@@ -83,16 +103,27 @@ class Commands{
                 }
                 $rule_help = '/\-\-help/';
                 if(preg_match($rule_help,$val,$result_help)){
-                    $allFuncs = $this->getAllClassMethods();
-                    $consolMsg = '';
-
-                    foreach($allFuncs as $allFv){
-                        if($allFv == '__construct'){
-                        }else{
-                            $consolMsg.="\n可执行Funs=>".$allFv."\n";
+                    list($allFuncs,$allFunDocs) = $this->getClassDetail();
+                    $consolMsg = "<Alonexy@961610358@qq.com>:\n 使用格式：\t php server --session=[*] --func=[function]\n";
+                    $funStrlenMax = 0;
+                    foreach($allFuncs as $funV){
+                        if(strlen($funV) >$funStrlenMax){
+                            $funStrlenMax = strlen($funV);
                         }
                     }
-                    $this->run->vbot->console->log($consolMsg);
+                    foreach($allFuncs as $allFk=>$allFv){
+                        if($allFv == '__construct'){
+                        }else{
+                            $gaps = '      ';
+                            if($funStrlenMax - strlen($allFv)){
+                                for($i=0;$i<($funStrlenMax - strlen($allFv));$i++){
+                                    $gaps.=' ';
+                                }
+                            }
+                            $consolMsg.="\n ".$allFv.$gaps.(isset($allFunDocs[$allFk])?$allFunDocs[$allFk]:'')."\t";
+                        }
+                    }
+                    print_r($this->colorize($consolMsg));
                     die(0);
                 }
             }
@@ -104,5 +135,39 @@ class Commands{
         }
         return false;
     }
+    //php反射API
+    public function getClassDetail()
+    {
+        $class = new \ReflectionClass($this->run);
+        /**
+         *   默认情况下，ReflectionClass会取所有的属性，private 和protected的也可以
+        如果只想获取到private属性，就要额外传个参数
+        可用参数列表:
+        $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
+        可用参数列表
+        ReflectionProperty::IS_STATIC
+        ReflectionProperty::IS_PUBLIC
+        ReflectionProperty::IS_PROVATE
+        ReflectionProperty::IS_PROECTED
+        如果要同时获取public 和private 属性，就这样写：ReflectionProperty::IS_PUBLIC | ReflectionProperty::IS_PROTECTED。
+         */
+        //方法=>getMethods  属性=>getProperties  注释=>getDocComment
+        $properties = $class->getMethods(\ReflectionProperty::IS_PUBLIC);
+        //获取注释
+        $funcs = [];
+        $funs_docs = [];
+        foreach($properties as &$property)
+        {
+            array_push($funcs,$property->name);
+            if($property->isPublic())
+            {
+                $docblock = $property->getDocComment();
+                preg_match_all('/@([namedesc])+\s[^\x00-\x80]*/',$docblock, $matches);
+                $docMsg = isset(explode(' ',$matches[0][0])[1])?explode(' ',$matches[0][0])[1]:'NotMsg';
+                array_push($funs_docs,$docMsg);
+            }
+        }
+        return [$funcs,$funs_docs];
 
+    }
 }
