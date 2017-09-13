@@ -104,7 +104,7 @@ class Commands{
                 $rule_help = '/\-\-help/';
                 if(preg_match($rule_help,$val,$result_help)){
                     list($allFuncs,$allFunDocs) = $this->getClassDetail();
-                    $consolMsg = "<Alonexy@961610358@qq.com>:\n 使用格式：\t php server --session=[*] --func=[function]\n";
+                    $consolMsg = "<Alonexy@961610358@qq.com>:\n 使用格式：\t php server --session=[*] --func=[function不区分大小写]\n";
                     $funStrlenMax = 0;
                     foreach($allFuncs as $funV){
                         if(strlen($funV) >$funStrlenMax){
