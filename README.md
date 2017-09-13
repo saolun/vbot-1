@@ -7,7 +7,12 @@ PHP>=7.0
 ### --func 不区分大小写  必须是Services Run.php 的pubilc的Fun
 ### --session= 会话id 随意写
 ```
-1.php server --session=vbot-test3 --func=msgreturn
+php server --help
+<Alonexy@961610358@qq.com>:
+ 使用格式：	 php server --session=[*] --func=[function不区分大小写]
 
-2.php server --session=vbot-test3 --func=TimeTask
+ start            启动
+ MsgReturn        收到信息后触发
+ TimeTask         定时任务
+
 ```

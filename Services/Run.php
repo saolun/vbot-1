@@ -55,7 +55,7 @@ class Run{
     {
         // 收到消息时触发
         $this->messageHandler->setHandler(function(Collection $message){
-            $this->vbot->console->log('---收到消息-回复消息---');
+            $this->vbot->console->log('---收到消息---');
             Text::send($message['from']['UserName'], 'Hi! 现在时间：'.date('Y-m-d H:i:s',time()));
         });
     }
@@ -67,6 +67,7 @@ class Run{
      */
     public function TimeTask(){
         // 一直触发
+        $this->vbot->console->log('---给所有好友发送消息---');
         $this->messageHandler->setCustomHandler(function(){
             $this->ContactsModel->getAllFirends()->each(function($info,$userid){
                 $this->vbot->console->log($userid);
