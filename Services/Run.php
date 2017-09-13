@@ -10,6 +10,7 @@ use Hanson\Vbot\Foundation\Vbot;
 use Illuminate\Support\Collection;
 use Hanson\Vbot\Message\Text;
 use Models\ContactsModel;
+use Models\MessageModel;
 
 class Run{
     public  $vbot;
@@ -53,10 +54,8 @@ class Run{
      */
     public function MsgHandle()
     {
-        // 收到消息时触发
         $this->messageHandler->setHandler(function(Collection $message){
-            $this->vbot->console->log('---收到消息---');
-            Text::send($message['from']['UserName'], 'Hi! 现在时间：'.date('Y-m-d H:i:s',time()));
+            new MessageModel($message);
         });
     }
 
@@ -73,7 +72,7 @@ class Run{
                 $this->vbot->console->log($userid);
                 Text::send($userid, 'Hi! '.$info['NickName'].'现在时间：'.date('Y-m-d H:i:s',time()).'--Powered By:Alonexy');
             });
-            sleep(60*30);
+            sleep(60*5);
         });
     }
 

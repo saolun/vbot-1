@@ -22,41 +22,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Commands.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/Commands.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.928572">
-              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-              <folding>
-                <element signature="e#84#101#0#PHP" expanded="true" />
-                <element signature="e#2143#2379#0#PHP" expanded="false" />
-                <element signature="e#2385#2989#0#PHP" expanded="false" />
-                <element signature="e#3006#4945#0#PHP" expanded="false" />
-                <element signature="e#4965#6267#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Run.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Services/Run.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53857565">
-              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
-              <folding>
-                <element signature="e#1451#1557#0#PHP" expanded="false" />
-                <element signature="e#2362#2431#0#PHP" expanded="false" />
-                <element signature="e#2436#4565#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageModel.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Models/MessageModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.85714287">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.6795252">
+              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+              <folding>
+                <element signature="e#24#57#0#PHP" expanded="true" />
+                <element signature="e#1276#1323#0#PHP" expanded="false" />
+                <element signature="e#1328#1658#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Console.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Console/Console.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.714286">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -67,17 +51,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Models/BaseModel.php" />
         <option value="$PROJECT_DIR$/Models/Contacts.php" />
         <option value="$PROJECT_DIR$/Models/ContactsModel.php" />
-        <option value="$PROJECT_DIR$/Core/Helper.php" />
         <option value="$PROJECT_DIR$/run.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/server" />
-        <option value="$PROJECT_DIR$/Models/MessageModel.php" />
+        <option value="$PROJECT_DIR$/Models/BaseModel.php" />
         <option value="$PROJECT_DIR$/Core/Commands.php" />
+        <option value="$PROJECT_DIR$/Core/Helper.php" />
         <option value="$PROJECT_DIR$/Services/Run.php" />
+        <option value="$PROJECT_DIR$/Models/MessageModel.php" />
       </list>
     </option>
   </component>
@@ -165,6 +149,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -180,7 +178,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Core/Com&#9;FILE&#9;file:///Users/alonex/Code/vbot/Core/Commands.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/alonex/Code/vbot/vendor/hanson/vbot/src/Console/Console.php&#10;Core/Com&#9;FILE&#9;file:///Users/alonex/Code/vbot/Core/Commands.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -233,6 +231,7 @@
     <editor active="true" />
     <layout>
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -247,7 +246,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -267,7 +265,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -307,6 +305,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.115384616">
           <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -347,22 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Support/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43620178">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/BaseModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14243324">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/illuminate/support/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34718102">
@@ -375,32 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34718102">
           <caret line="345" column="9" selection-start-line="345" selection-start-column="9" selection-end-line="345" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Console/Console.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.857143">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3560831">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5341246">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -456,14 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034188036">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Reflection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27596438">
@@ -480,36 +429,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/MessageModel.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.85714287">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state vertical-scroll-proportion="-12.857142">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034188036">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.285714">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Core/Commands.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.928572">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.7596439">
+          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
           <folding>
             <element signature="e#84#101#0#PHP" expanded="true" />
+            <element signature="e#339#1519#0#PHP" expanded="false" />
+            <element signature="e#1542#2108#0#PHP" expanded="false" />
             <element signature="e#2143#2379#0#PHP" expanded="false" />
-            <element signature="e#2385#2989#0#PHP" expanded="false" />
-            <element signature="e#3006#4945#0#PHP" expanded="false" />
-            <element signature="e#4965#6267#0#PHP" expanded="false" />
+            <element signature="e#4889#6191#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5964392">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <element signature="e#252#358#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Services/Run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53857565">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.231454">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding>
-            <element signature="e#1451#1557#0#PHP" expanded="false" />
-            <element signature="e#2362#2431#0#PHP" expanded="false" />
-            <element signature="e#2436#4565#0#PHP" expanded="false" />
+            <element signature="e#1350#1456#0#PHP" expanded="false" />
+            <element signature="e#2260#2329#0#PHP" expanded="false" />
+            <element signature="e#2334#4463#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Core/ApiExceptionHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.035714">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/illuminate/container/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8694363">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Support/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60534126">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hanson/vbot/src/Console/Console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.714286">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/MessageModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6795252">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding>
+            <element signature="e#24#57#0#PHP" expanded="true" />
+            <element signature="e#1276#1323#0#PHP" expanded="false" />
+            <element signature="e#1328#1658#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

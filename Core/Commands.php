@@ -71,25 +71,25 @@ class Commands{
     }
 
     private function colorize($text, $status='SUC') {
-        $out = "";
-        switch($status) {
-            case "SUC":
-                $out = "[32m"; //Green
-                break;
-            case "FAIL":
-                $out = "[31m"; //Red
-                break;
-            case "WARN":
-                $out = "[33m"; //Yellow
-                break;
-            case "NOTE":
-                $out = "[34m"; //Blue
-                break;
-            default:
-                throw new Exception("Invalid status: " . $status);
-        }
-        return chr(27) . "$out" . "$text" . chr(27) . "[0m";
+    $out = "";
+    switch($status) {
+        case "SUC":
+            $out = "[32m"; //Green
+            break;
+        case "FAIL":
+            $out = "[31m"; //Red
+            break;
+        case "WARN":
+            $out = "[33m"; //Yellow
+            break;
+        case "NOTE":
+            $out = "[34m"; //Blue
+            break;
+        default:
+            throw new Exception("Invalid status: " . $status);
     }
+    return chr(27) . "$out" . "$text" . chr(27) . "[0m";
+}
     //匹配 --
     private function checkOption($argv){
         if(is_array($argv)){
