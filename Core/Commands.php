@@ -69,6 +69,7 @@ class Commands{
         array_walk($methods,function(&$v,$k){$v = strtolower($v);});
         return $methods;
     }
+
     private function colorize($text, $status='SUC') {
         $out = "";
         switch($status) {

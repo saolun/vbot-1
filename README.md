@@ -8,11 +8,13 @@ PHP>=7.0
 ### --session= 会话id 随意写
 ```
 php server --help
+
 <Alonexy@961610358@qq.com>:
  使用格式：	 php server --session=[*] --func=[function不区分大小写]
 
  start            启动
- MsgReturn        收到信息后触发
- TimeTask         定时任务
+ MsgHandle        消息处理
+ TaskHandle       任务处理
+ HeartBeat        维持心跳
 
 ```

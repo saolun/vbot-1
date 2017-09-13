@@ -22,27 +22,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Commands.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Commands.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/Commands.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71513355">
-              <caret line="106" column="119" selection-start-line="106" selection-start-column="119" selection-end-line="106" selection-end-column="119" />
+            <state vertical-scroll-proportion="-12.928572">
+              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
               <folding>
                 <element signature="e#84#101#0#PHP" expanded="true" />
+                <element signature="e#2143#2379#0#PHP" expanded="false" />
+                <element signature="e#2385#2989#0#PHP" expanded="false" />
+                <element signature="e#3006#4945#0#PHP" expanded="false" />
+                <element signature="e#4965#6267#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Run.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Run.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Services/Run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.535714">
-              <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.53857565">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
               <folding>
-                <element signature="e#1457#1563#0#PHP" expanded="false" />
-                <element signature="e#2045#2114#0#PHP" expanded="false" />
-                <element signature="e#2119#4248#0#PHP" expanded="false" />
+                <element signature="e#1451#1557#0#PHP" expanded="false" />
+                <element signature="e#2362#2431#0#PHP" expanded="false" />
+                <element signature="e#2436#4565#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -71,8 +75,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/server" />
-        <option value="$PROJECT_DIR$/Core/Commands.php" />
         <option value="$PROJECT_DIR$/Models/MessageModel.php" />
+        <option value="$PROJECT_DIR$/Core/Commands.php" />
         <option value="$PROJECT_DIR$/Services/Run.php" />
       </list>
     </option>
@@ -484,24 +488,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/Run.php">
+    <entry file="file://$PROJECT_DIR$/Core/Commands.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.535714">
-          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+        <state vertical-scroll-proportion="-12.928572">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
           <folding>
-            <element signature="e#1457#1563#0#PHP" expanded="false" />
-            <element signature="e#2045#2114#0#PHP" expanded="false" />
-            <element signature="e#2119#4248#0#PHP" expanded="false" />
+            <element signature="e#84#101#0#PHP" expanded="true" />
+            <element signature="e#2143#2379#0#PHP" expanded="false" />
+            <element signature="e#2385#2989#0#PHP" expanded="false" />
+            <element signature="e#3006#4945#0#PHP" expanded="false" />
+            <element signature="e#4965#6267#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Commands.php">
+    <entry file="file://$PROJECT_DIR$/Services/Run.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71513355">
-          <caret line="106" column="119" selection-start-line="106" selection-start-column="119" selection-end-line="106" selection-end-column="119" />
+        <state vertical-scroll-proportion="0.53857565">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
           <folding>
-            <element signature="e#84#101#0#PHP" expanded="true" />
+            <element signature="e#1451#1557#0#PHP" expanded="false" />
+            <element signature="e#2362#2431#0#PHP" expanded="false" />
+            <element signature="e#2436#4565#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

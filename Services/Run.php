@@ -47,11 +47,11 @@ class Run{
     }
 
     /**
-     * @name 收到信息后触发
-     * @desc 收到信息后总定义回复
+     * @name 消息处理
+     * @desc 消息处理总定义
      * @throws \Hanson\Vbot\Exceptions\ArgumentException
      */
-    public function MsgReturn()
+    public function MsgHandle()
     {
         // 收到消息时触发
         $this->messageHandler->setHandler(function(Collection $message){
@@ -61,11 +61,11 @@ class Run{
     }
 
     /**
-     * @name 定时任务
+     * @name 任务处理
      * @desc 任务维持方法
      * @throws \Hanson\Vbot\Exceptions\ArgumentException
      */
-    public function TimeTask(){
+    public function TaskHandle(){
         // 一直触发
         $this->vbot->console->log('---给所有好友发送消息---');
         $this->messageHandler->setCustomHandler(function(){
@@ -73,6 +73,19 @@ class Run{
                 $this->vbot->console->log($userid);
                 Text::send($userid, 'Hi! '.$info['NickName'].'现在时间：'.date('Y-m-d H:i:s',time()).'--Powered By:Alonexy');
             });
+            sleep(60*30);
+        });
+    }
+
+    /**
+     * @name 维持心跳
+     * @desc 测试一下
+     */
+    public function HeartBeat()
+    {
+        $this->messageHandler->setCustomHandler(function(){
+            $this->vbot->console->log('HeartBeat '.time());
+            Text::send('filehelper', date('Y-m-d H:i:s',time()));
             sleep(60*30);
         });
     }
