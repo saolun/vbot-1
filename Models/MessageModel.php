@@ -94,11 +94,11 @@ class MessageModel extends BaseModel{
 //            file_put_contents(__DIR__.'/test.gif', $resource);
 //        });
         // 直接传 $message 便能直接发送该 message 的表情
-        //Emoticon::send($this->message['from']['UserName'], $this->message);
+        Emoticon::send($this->message['from']['UserName'], $this->message);
         // 也可以选择一个表情路径
         //Emoticon::send($this->message['from']['UserName'], __DIR__.'/test.gif');
         // 或者从表情库随机抽取一个进行发送
-        Emoticon::sendRandom($this->message['from']['UserName']);
+        //Emoticon::sendRandom($this->message['from']['UserName']);
     }
 
 }

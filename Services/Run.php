@@ -66,11 +66,13 @@ class Run{
      */
     public function TaskHandle(){
         // 一直触发
-        $this->vbot->console->log('---给所有好友发送消息---');
+//        $this->vbot->console->log('---给所有好友发送消息---');
         $this->messageHandler->setCustomHandler(function(){
             $this->ContactsModel->getAllFirends()->each(function($info,$userid){
                 $this->vbot->console->log($userid);
-                Text::send($userid, 'Hi! '.$info['NickName'].'现在时间：'.date('Y-m-d H:i:s',time()).'--Powered By:Alonexy');
+                //$this->vbot->console->log($info['NickName']);
+
+                Text::send($userid, '早安  [玫瑰]');
             });
             sleep(60*5);
         });

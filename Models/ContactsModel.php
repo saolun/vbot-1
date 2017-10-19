@@ -16,4 +16,5 @@ class ContactsModel extends BaseModel{
         $friends = vbot('friends');
         return $friends;
     }
+
 }
